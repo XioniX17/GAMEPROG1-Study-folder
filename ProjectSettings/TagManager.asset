@@ -8,6 +8,9 @@ TagManager:
   - Water
   - Grass
   - Pokeball
+  - Bullet_W
+  - Bullet_G
+  - Bullet_F
   layers:
   - Default
   - TransparentFX

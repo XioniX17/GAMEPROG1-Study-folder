@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FirePlayer
   speed: 10
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 6060047020159852920, guid: 7a3dcee17dc9ae947a81eba498dafbb7, type: 3}
 --- !u!50 &1711843755965310054
 Rigidbody2D:
   serializedVersion: 5

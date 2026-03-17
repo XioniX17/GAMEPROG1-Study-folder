@@ -8,7 +8,7 @@ public class FirePlayer : NewPlayer
     protected override void Attack()
     {
         NewBullet nBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        nBullet.SetDirection(lastDirection);
+        nBullet.SetDirection(transform.position);
     }
 
     protected override void OnTriggerEnter2D(Collider2D collision)
