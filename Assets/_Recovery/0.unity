@@ -1078,8 +1078,6 @@ GameObject:
   - component: {fileID: 1164625207}
   - component: {fileID: 1164625206}
   - component: {fileID: 1164625208}
-  - component: {fileID: 1164625209}
-  - component: {fileID: 1164625210}
   m_Layer: 0
   m_Name: Water Hazard
   m_TagString: Water
@@ -1197,45 +1195,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.64
---- !u!114 &1164625209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164625205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dafabbc42bd9334cabf40dfa1906a51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HazardWater
---- !u!50 &1164625210
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164625205}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1629020996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,8 +1308,6 @@ GameObject:
   - component: {fileID: 1670612261}
   - component: {fileID: 1670612260}
   - component: {fileID: 1670612262}
-  - component: {fileID: 1670612263}
-  - component: {fileID: 1670612264}
   m_Layer: 0
   m_Name: Fire Hazard
   m_TagString: Fire
@@ -1468,45 +1425,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.64
---- !u!114 &1670612263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670612259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef203d1adc9bde84d914a0d26b6ca0ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HazardFire
---- !u!50 &1670612264
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670612259}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1853303516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,8 +1436,6 @@ GameObject:
   - component: {fileID: 1853303518}
   - component: {fileID: 1853303517}
   - component: {fileID: 1853303519}
-  - component: {fileID: 1853303520}
-  - component: {fileID: 1853303521}
   m_Layer: 0
   m_Name: Grass Hazard
   m_TagString: Grass
@@ -1637,45 +1553,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.64
---- !u!114 &1853303520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853303516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5cd1b4072165f8468bd2ac0d9fe7a5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HazardGrass
---- !u!50 &1853303521
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853303516}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1920071289
 GameObject:
   m_ObjectHideFlags: 0
