@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     private InputAction moveAction;
     public float speed = 2.0f;
     private Vector2 direction = Vector2.down;
+    private Vector2 lastDirection = Vector2.right;
     private Vector2 velocity;
     
     void Start()
@@ -20,11 +21,26 @@ public class Player : MonoBehaviour
     
     void Update()
     {
+        Movement();
+    }
+
+    private void Movement() 
+    {
         direction = moveAction.ReadValue<Vector2>();
         direction.Normalize();
 
-        animator.SetBool("IsWalking", moveAction.IsPressed());
+        animator.SetFloat("Horizontal", lastDirection.x);
+        animator.SetFloat("Vertical", lastDirection.y);
 
+        if (moveAction.IsPressed() == true)
+        {
+            lastDirection = direction;
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
+        }
 
         velocity = speed * direction * Time.deltaTime;
         transform.Translate(velocity);
